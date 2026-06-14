@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Gembul Dapur Ummi - Molen Coklat & Snack Pisang Homemade Premium. Dibuat dengan bahan berkualitas, renyah diluar lembut didalam. Pesan sekarang via WhatsApp!">
+  <meta name="keywords"
+    content="molen coklat, molen gembul, dapur ummi, snack homemade, banana stik, molen ayam mayo, molen ayam moza">
+  <meta name="author" content="Gembul Dapur Ummi">
+  <title>Gembul Dapur Ummi | Molen Coklat & Snack Premium Homemade</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <div class="nav-brand-icon">🥐</div>
+      <div class="nav-brand-text"><span>Gembul</span> Dapur Ummi</div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#products">Produk</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#testimonials">Ulasan</a></li>
+      <li>
+        <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Molen%20Gembul%2C%20apa%20stoknya%20ada%3F"
+          class="nav-cta" target="_blank" rel="noopener">
+          Pesan Sekarang
+        </a>
+      </li>
+    </ul>
+
+    <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <!-- 3D Chocolate Drips from top -->
+    <div class="choco-drips">
+      <div class="choco-drip"></div>
+      <div class="choco-drip"></div>
+      <div class="choco-drip"></div>
+      <div class="choco-drip"></div>
+      <div class="choco-drip"></div>
+      <div class="choco-drip"></div>
+      <div class="choco-drip"></div>
+      <div class="choco-drip"></div>
+      <div class="choco-drip"></div>
+      <div class="choco-drip"></div>
+    </div>
+
+    <!-- Chocolate splash blobs -->
+    <div class="choco-splash" style="top: 20%; left: 8%;">
+      <div class="choco-splash-blob" style="width: 18px; height: 18px; animation-delay: 1.5s;"></div>
+    </div>
+    <div class="choco-splash" style="top: 70%; left: 5%;">
+      <div class="choco-splash-blob" style="width: 12px; height: 12px; animation-delay: 2.2s;"></div>
+    </div>
+    <div class="choco-splash" style="top: 40%; right: 6%;">
+      <div class="choco-splash-blob" style="width: 22px; height: 22px; animation-delay: 0.8s;"></div>
+    </div>
+    <div class="choco-splash" style="bottom: 15%; right: 10%;">
+      <div class="choco-splash-blob" style="width: 15px; height: 15px; animation-delay: 1.8s;"></div>
+    </div>
+    <div class="choco-splash" style="top: 55%; left: 15%;">
+      <div class="choco-splash-blob" style="width: 10px; height: 10px; animation-delay: 2.5s;"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">Homemade Premium Quality</div>
+        <h1 class="hero-title">
+          Molen <span class="highlight">Gembul</span><br>
+          Renyah & Lumer!
+        </h1>
+        <p class="hero-description">
+          Nikmati kelezatan molen coklat khas Dapur Ummi — kulit renyah berlapis, isian coklat premium yang lumer di
+          mulut. Dibuat fresh setiap hari dengan cinta dan bahan pilihan terbaik.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Molen%20Gembul%2C%20apa%20stoknya%20ada%3F"
+            class="btn btn-wa" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Pesan via WhatsApp
+          </a>
+          <a href="#products" class="btn btn-outline">Lihat Produk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Pelanggan</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">5K+</div>
+            <div class="stat-label">Terjual</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">⭐ 4.9</div>
+            <div class="stat-label">Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <!-- Rotating glow behind image -->
+        <div class="hero-glow"></div>
+        <div class="hero-image-wrapper">
+          <img src="images/molen-coklat-ori.jpg" alt="Molen Coklat Tumpah Premium" loading="eager">
+        </div>
+        <div class="hero-floating-badge">
+          <div class="badge-text">⭐ Best Seller!</div>
+          <div class="badge-sub">Molen Coklat Ori</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section class="section products-section" id="products">
+    <div class="section-header animate-on-scroll">
+      <div class="section-label"> Pilihan Favorit</div>
+      <h2 class="section-title">Produk Kami</h2>
+      <p class="section-subtitle">Setiap produk dibuat dengan resep homemade dan bahan premium pilihan. Dijamin
+        ketagihan!</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Product 1: Molen Coklat Ori (Best Seller) -->
+      <div class="product-card animate-on-scroll" id="product-molen-coklat-ori">
+        <div class="product-image">
+          <span class="badge-bestseller">Best Seller</span>
+          <img src="images/molen-coklat-ori.jpg" alt="Molen Coklat Ori - Best Seller Gembul Dapur Ummi" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Molen Coklat Ori</h3>
+          <p class="product-description">
+            Favorit nomor satu! Molen gembul dengan kulit berlapis yang super renyah, diisi coklat premium yang lumer
+            sempurna di setiap gigitan. Perpaduan manis dan gurih yang bikin nagih. Cocok dinikmati hangat sebagai teman
+            ngopi sore.
+          </p>
+          <div class="product-meta">
+            <span class="product-tag">🔥 Terlaris</span>
+            <span class="product-tag">🍫 Coklat Premium</span>
+            <span class="product-tag">🧀 + Keju</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Molen%20Coklat%20Ori%2C%20apa%20stoknya%20ada%3F"
+              class="btn btn-wa" target="_blank" rel="noopener">
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: Molen Coklat Premium -->
+      <div class="product-card animate-on-scroll" id="product-molen-coklat-premium">
+        <div class="product-image">
+          <img src="images/molen-coklat-premium.jpg" alt="Molen Coklat Premium Gembul Dapur Ummi" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Molen Coklat Premium</h3>
+          <p class="product-description">
+            Varian coklat yang lebih premium! Dengan isian coklat yang lebih melimpah dan lumer di lidah, memberikan rasa manis yang
+            kaya dan lezat. Cocok untuk pecinta coklat yang ingin menikmati pengalaman rasa yang lebih tinggi.
+          </p>
+          <div class="product-meta">
+            <span class="product-tag">🍌 Pisang Uli</span>
+            <span class="product-tag">🍫 Coklat Lumer</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Molen%20Coklat%20Premium%2C%20apa%20stoknya%20ada%3F"
+              class="btn btn-wa" target="_blank" rel="noopener">
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Molen Ayam Mayo -->
+      <div class="product-card animate-on-scroll" id="product-molen-ayam-mayo">
+        <div class="product-image">
+          <img src="images/molen-ayam-mayo.jpg" alt="Molen Ayam Mayo Gembul Dapur Ummi" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Molen Ayam Mayo</h3>
+          <p class="product-description">
+            Varian gurih yang bikin ketagihan! Isian ayam mayo creamy dengan bumbu yang kaya rasa, dibungkus kulit molen
+            renyah. Tekstur lembut mayo berpadu sempurna dengan crunch kulit molen. Wajib dicoba untuk pecinta snack
+            gurih!
+          </p>
+          <div class="product-meta">
+            <span class="product-tag">🍗 Ayam Premium</span>
+            <span class="product-tag">🌶️ Gurih Rempah</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Molen%20Ayam%20Mayo%2C%20apa%20stoknya%20ada%3F"
+              class="btn btn-wa" target="_blank" rel="noopener">
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: Molen Ayam Moza -->
+      <div class="product-card animate-on-scroll" id="product-molen-ayam-moza">
+        <div class="product-image">
+          <img src="images/molen-ayam-moza.jpg" alt="Molen Ayam Moza Gembul Dapur Ummi" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Molen Ayam Moza</h3>
+          <p class="product-description">
+            Upgrade dari ayam mayo biasa! Isian ayam creamy dengan taburan keju mozarella yang meleleh, menciptakan rasa
+            gurih yang berlipat ganda. Setiap gigitan menghasilkan tarikan keju yang menggoda — comfort food sempurna!
+          </p>
+          <div class="product-meta">
+            <span class="product-tag">🧀 Keju Mozarella</span>
+            <span class="product-tag">🍗 Ayam Rempah</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Molen%20Ayam%20Moza%2C%20apa%20stoknya%20ada%3F"
+              class="btn btn-wa" target="_blank" rel="noopener">
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5:Molen Keju -->
+      <div class="product-card animate-on-scroll" id="product-molen-keju">
+        <div class="product-image">
+          <img src="images/molen-keju.jpeg" alt="Molen Keju Gembul Dapur Ummi" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Molen Keju</h3>
+          <p class="product-description">
+            Varian keju yang unik! perpaduan antara pisang yang lembut dengan keju cheddar yang meleleh di lidah, dibungkus kulit molen renyah yang membuatnya semakin menggoda. Rasa gurih dan lezat yang tak terlupakan!
+          </p>
+          <div class="product-meta">
+            <span class="product-tag">🍌 Pisang Crispy</span>
+            <span class="product-tag">🍫 Isian Coklat</span>
+            <span class="product-tag">🧀 Isian Keju chedar</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Molen%20Keju%2C%20apa%20stoknya%20ada%3F"
+              class="btn btn-wa" target="_blank" rel="noopener">
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5:Molen Coklat Keju -->
+      <div class="product-card animate-on-scroll" id="product-molen-coklat-keju">
+        <div class="product-image">
+          <img src="images/molen-coklat-keju.jpeg" alt="Molen Coklat Keju Gembul Dapur Ummi" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Molen Coklat Keju</h3>
+          <p class="product-description">
+            Kombinasi coklat dan keju yang sempurna! Isian coklat premium yang lumer dipadukan dengan keju cheddar yang gurih, menciptakan rasa manis dan asin yang seimbang. Setiap gigitan memberikan sensasi rasa yang kaya dan memuaskan!
+          </p>
+          <div class="product-meta">
+            <span class="product-tag">🍌 Pisang Crispy</span>
+            <span class="product-tag">🧀 Isian Keju chedar</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Banana%20Stik%20Coklat%2C%20apa%20stoknya%20ada%3F"
+              class="btn btn-wa" target="_blank" rel="noopener">
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6: Banana Stik -->
+      <div class="product-card animate-on-scroll" id="product-banana-stik">
+        <div class="product-image">
+          <img src="images/banana-stik.jpg" alt="Banana Stik Coklat Gembul Dapur Ummi" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Banana Stik Coklat</h3>
+          <p class="product-description">
+            Camilan kekinian yang crispy dan nyoklat! Pisang digulung kulit pastry renyah berbentuk stik, lalu dihias
+            dengan isian premium yang manis. Tekstur crispy di luar, manis lembut di dalam — snack sempurna untuk segala
+            suasana.
+          </p>
+          <div class="product-meta">
+            <span class="product-tag">🍌 Pisang Crispy</span>
+            <span class="product-tag">🍫 Isian Coklat</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Banana%20Stik%20Coklat%2C%20apa%20stoknya%20ada%3F"
+              class="btn btn-wa" target="_blank" rel="noopener">
+              Pesan
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about-section" id="about">
+    <div class="section-header animate-on-scroll">
+      <div class="section-label">✨ Kenapa Kami</div>
+      <h2 class="section-title">Keunggulan Gembul</h2>
+      <p class="section-subtitle">Kami berkomitmen menghadirkan frozen food homemade berkualitas dengan sentuhan cinta
+        di setiap prosesnya.</p>
+    </div>
+
+    <div class="about-content">
+      <div class="about-card animate-on-scroll slide-left">
+        <div class="about-icon">🏠</div>
+        <h3>100% Homemade</h3>
+        <p>Dibuat langsung dari dapur kami dengan resep keluarga yang sudah teruji. Tanpa pengawet, tanpa bahan kimia
+          berbahaya.</p>
+      </div>
+      <div class="about-card animate-on-scroll zoom-in">
+        <div class="about-icon">⭐</div>
+        <h3>Bahan Premium</h3>
+        <p>Kami hanya menggunakan bahan-bahan berkualitas terbaik — coklat premium, keju asli, dan pisang pilihan segar
+          setiap hari.</p>
+      </div>
+      <div class="about-card animate-on-scroll slide-right">
+        <div class="about-icon">🚚</div>
+        <h3>Fresh & Terjamin</h3>
+        <p>Produksi fresh setiap hari dan dikemas higienis. Pesanan diproses cepat agar sampai di tangan kamu dalam
+          kondisi terbaik.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="section-header animate-on-scroll">
+      <div class="section-label">💬 Kata Mereka</div>
+      <h2 class="section-title">Ulasan Pelanggan</h2>
+      <p class="section-subtitle">Kepuasan pelanggan adalah prioritas utama kami. Ini kata mereka yang sudah mencoba!
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate-on-scroll zoom-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Molen coklat orinya juara banget! Kulitnya renyah berlapis dan coklatnya beneran lumer. Udah 3x repeat order
+          dan nggak pernah mengecewakan. Anak-anak di rumah juga suka banget!"
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">RS</div>
+          <div>
+            <div class="testimonial-author-name">Rina Saptarini</div>
+            <div class="testimonial-author-loc">Jakarta Selatan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card animate-on-scroll zoom-in" style="transition-delay: 0.2s;">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Banana stiknya crispy banget dan coklat drizzlenya bikin tambah enak. Packagingnya juga rapi dan cantik,
+          cocok buat oleh-oleh. Pasti order lagi! 🤤"
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">DA</div>
+          <div>
+            <div class="testimonial-author-name">Dimas Arya</div>
+            <div class="testimonial-author-loc">Tangerang</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card animate-on-scroll zoom-in" style="transition-delay: 0.4s;">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Molen ayam mayonya enak banget, bumbunya berasa dan isiannya creamy. Pas dimakan hangat, kulitnya renyah
+          sempurna. Recommended banget buat yang suka snack gurih!"
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">NF</div>
+          <div>
+            <div class="testimonial-author-name">Nadia Fitri</div>
+            <div class="testimonial-author-loc">Bekasi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="section cta-section" id="order">
+    <div class="cta-content animate-on-scroll zoom-in">
+      <h2 class="cta-title">Yuk, Pesan Sekarang! </h2>
+      <p class="cta-text">
+        Jangan sampai kehabisan! Klik tombol di bawah untuk langsung terhubung dengan kami via WhatsApp. Pesan hari ini,
+        molen fresh langsung sampai ke rumahmu!
+      </p>
+      <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Molen%20Gembul%2C%20apa%20stoknya%20ada%3F"
+        class="cta-wa-btn" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        Chat WhatsApp Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="nav-brand-text"><span>Gembul</span> Dapur Ummi</div>
+        <p>Molen Coklat & Frozen food Homemade. Dibuat dengan cinta dan bahan pilihan terbaik dari Dapur Ummi untuk
+          keluarga Indonesia.</p>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-heading">Menu</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#testimonials">Ulasan</a></li>
+          <li><a href="#order">Pesan</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-info">
+        <h4 class="footer-heading">Hubungi Kami</h4>
+        <ul class="footer-contact">
+          <li>
+            <span>📱</span>
+            <a href="https://wa.me/6281511040388" target="_blank" rel="noopener">0815-1104-0388</a>
+          </li>
+          <li>
+            <span>🕐</span>
+            <span>Senin - Sabtu, 08:00 - 20:00 WIB</span>
+          </li>
+          <li>
+            <span>📍</span>
+            <span>Cileungsi Bogor, Jawa Barat, Indonesia</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gembul Dapur Ummi. All rights reserved.</p>
+      <p>Made with <span class="heart">❤️</span> by Dapur Ummi</p>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+  <a href="https://wa.me/6281511040388?text=Permisi%2C%20saya%20mau%20pesan%20Molen%20Gembul%2C%20apa%20stoknya%20ada%3F"
+    class="wa-float" target="_blank" rel="noopener" id="waFloat">
+    <div class="wa-float-tooltip">Chat kami di WhatsApp!</div>
+    <div class="wa-float-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </div>
+  </a>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // ===== Navbar scroll effect =====
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // ===== Mobile nav toggle =====
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function toggleNav() {
+      navToggle.classList.toggle('active');
+      navLinks.classList.toggle('open');
+      navOverlay.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+    }
+
+    navToggle.addEventListener('click', toggleNav);
+    navOverlay.addEventListener('click', toggleNav);
+
+    // Close nav on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('open')) {
+          toggleNav();
+        }
+      });
+    });
+
+    // ===== Scroll animations (Intersection Observer) =====
+    const observerOptions = {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Stagger animation delay for cards
+          const delay = entry.target.closest('.products-grid, .about-content, .testimonials-grid')
+            ? (Array.from(entry.target.parentElement.children).indexOf(entry.target) * 150)
+            : 0;
+
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, delay);
+
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // ===== Smooth scroll for anchor links =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // ===== Expand product description =====
+    document.querySelectorAll('.product-description').forEach(desc => {
+      desc.setAttribute('title', 'Klik untuk membaca selengkapnya');
+      desc.addEventListener('click', () => {
+        desc.classList.toggle('expanded');
+      });
+    });
+
+    // ===== Show WhatsApp float after scroll =====
+    const waFloat = document.getElementById('waFloat');
+    waFloat.style.opacity = '0';
+    waFloat.style.pointerEvents = 'none';
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        waFloat.style.opacity = '1';
+        waFloat.style.pointerEvents = 'all';
+      } else {
+        waFloat.style.opacity = '0';
+        waFloat.style.pointerEvents = 'none';
+      }
+    }, { passive: true });
+  </script>
+
+  <!-- VanillaTilt for 3D Effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <script>
+    // 3D Tilt on product cards
+    VanillaTilt.init(document.querySelectorAll(".product-card"), {
+      max: 12,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.12,
+      perspective: 1000,
+      scale: 1.03,
+      gyroscope: true,
+    });
+
+    // 3D Tilt on hero image
+    const heroWrapper = document.querySelector(".hero-image-wrapper");
+    if (heroWrapper) {
+      VanillaTilt.init(heroWrapper, {
+        max: 8,
+        speed: 300,
+        glare: true,
+        "max-glare": 0.2,
+        perspective: 1200,
+        scale: 1.02,
+        gyroscope: true,
+      });
+    }
+
+    // 3D Tilt on about cards
+    VanillaTilt.init(document.querySelectorAll(".about-card"), {
+      max: 10,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.08,
+      perspective: 1000,
+      gyroscope: true,
+    });
+
+    // 3D Tilt on testimonial cards
+    VanillaTilt.init(document.querySelectorAll(".testimonial-card"), {
+      max: 8,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.06,
+      perspective: 1200,
+      gyroscope: true,
+    });
+
+    // Parallax effect on chocolate splash blobs
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      document.querySelectorAll('.choco-splash').forEach((el, i) => {
+        const speed = 0.15 + (i * 0.05);
+        el.style.transform = `translateY(${scrollY * speed}px)`;
+      });
+    }, { passive: true });
+  </script>
+
+</body>
+
+</html>
