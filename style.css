@@ -1,3 +1,4 @@
+
 /* ===== DESIGN TOKENS ===== */
 :root {
   /* Color Palette - Dark Chocolate Premium */
@@ -1436,6 +1437,97 @@ ul {
     width: 30px;
     height: 30px;
   }
+
+  /* === MOBILE 3D OPTIMIZATION === */
+
+  /* Disable heavy 3D transforms — use flat on mobile */
+  .product-card,
+  .about-card,
+  .testimonial-card {
+    transform-style: flat !important;
+  }
+
+  .product-card:hover {
+    transform: translateY(-6px) !important;
+  }
+
+  .about-card:hover {
+    transform: translateY(-5px) !important;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-4px) !important;
+  }
+
+  /* Simplify hero floating animation */
+  .hero-image-wrapper {
+    animation: none !important;
+    transform-style: flat !important;
+    box-shadow: var(--shadow-lg) !important;
+  }
+
+  .hero-image-wrapper:hover {
+    transform: none !important;
+  }
+
+  /* Hide heavy decorative elements */
+  .hero-glow {
+    display: none;
+  }
+
+  .choco-splash {
+    display: none;
+  }
+
+  /* Simplify chocolate drips */
+  .choco-drips {
+    height: 50px;
+  }
+
+  .choco-drip:nth-child(n+7) {
+    display: none;
+  }
+
+  .choco-drip::after {
+    animation: none;
+  }
+
+  /* Reduce backdrop-filter for perf */
+  .navbar.scrolled {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .product-card {
+    backdrop-filter: none;
+  }
+
+  /* Disable text glow animation (GPU heavy) */
+  .hero-title {
+    animation: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Lighter scroll animations */
+  .animate-on-scroll {
+    transition-duration: 0.5s;
+  }
+
+  .animate-on-scroll.slide-left {
+    transform: translateX(-30px);
+  }
+
+  .animate-on-scroll.slide-right {
+    transform: translateX(30px);
+  }
+
+  .animate-on-scroll:not(.slide-left):not(.slide-right):not(.zoom-in) {
+    transform: translateY(25px);
+  }
+
+  .animate-on-scroll.zoom-in {
+    transform: scale(0.92);
+  }
 }
 
 @media (max-width: 480px) {
@@ -1466,13 +1558,73 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  /* Further simplify on very small screens */
   .choco-drips {
-    height: 45px;
+    height: 35px;
   }
 
-  .choco-drip:nth-child(n+7) {
+  .choco-drip:nth-child(n+5) {
     display: none;
   }
+
+  .hero-floating-badge {
+    animation: none;
+  }
+
+  /* Disable all backdrop-filter on low-end */
+  .about-card {
+    backdrop-filter: none;
+  }
+
+  /* Disable shine sweep on buttons */
+  .btn::before,
+  .cta-wa-btn::before {
+    display: none;
+  }
+}
+
+/* ===== REDUCED MOTION ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-image-wrapper,
+  .hero-floating-badge,
+  .choco-drip,
+  .choco-drip::after,
+  .choco-splash-blob,
+  .hero-glow,
+  .badge-bestseller,
+  .wa-float-btn {
+    animation: none !important;
+  }
+}
+
+/* ===== GPU ACCELERATION HINTS ===== */
+.hero-image-wrapper,
+.product-card,
+.about-card,
+.testimonial-card,
+.choco-drip,
+.navbar {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.animate-on-scroll.visible {
+  will-change: auto;
 }
 
 /* ===== UTILITY ===== */
@@ -1503,3 +1655,4 @@ ul {
   opacity: 1;
   pointer-events: all;
 }
+
