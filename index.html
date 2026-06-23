@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -382,7 +382,7 @@
       <div class="testimonial-card animate-on-scroll zoom-in" style="transition-delay: 0.2s;">
         <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-text">
-          "Banana stiknya crispy banget dan coklat drizzlenya bikin tambah enak. Packagingnya juga rapi dan cantik,
+          "Banana stiknya crispy banget dan coklatnya bikin tambah enak. Packagingnya juga rapi dan cantik,
           cocok buat oleh-oleh. Pasti order lagi! 🤤"
         </p>
         <div class="testimonial-author">
@@ -596,59 +596,72 @@
   <!-- VanillaTilt for 3D Effects -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
   <script>
-    // 3D Tilt on product cards
-    VanillaTilt.init(document.querySelectorAll(".product-card"), {
-      max: 12,
-      speed: 400,
-      glare: true,
-      "max-glare": 0.12,
-      perspective: 1000,
-      scale: 1.03,
-      gyroscope: true,
-    });
+    // Only enable 3D tilt & parallax on desktop (>768px)
+    const isDesktop = window.matchMedia('(min-width: 769px)').matches;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    // 3D Tilt on hero image
-    const heroWrapper = document.querySelector(".hero-image-wrapper");
-    if (heroWrapper) {
-      VanillaTilt.init(heroWrapper, {
-        max: 8,
-        speed: 300,
+    if (isDesktop && !prefersReducedMotion) {
+      // 3D Tilt on product cards
+      VanillaTilt.init(document.querySelectorAll(".product-card"), {
+        max: 12,
+        speed: 400,
         glare: true,
-        "max-glare": 0.2,
+        "max-glare": 0.12,
+        perspective: 1000,
+        scale: 1.03,
+        gyroscope: false,
+      });
+
+      // 3D Tilt on hero image
+      const heroWrapper = document.querySelector(".hero-image-wrapper");
+      if (heroWrapper) {
+        VanillaTilt.init(heroWrapper, {
+          max: 8,
+          speed: 300,
+          glare: true,
+          "max-glare": 0.2,
+          perspective: 1200,
+          scale: 1.02,
+          gyroscope: false,
+        });
+      }
+
+      // 3D Tilt on about cards
+      VanillaTilt.init(document.querySelectorAll(".about-card"), {
+        max: 10,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.08,
+        perspective: 1000,
+        gyroscope: false,
+      });
+
+      // 3D Tilt on testimonial cards
+      VanillaTilt.init(document.querySelectorAll(".testimonial-card"), {
+        max: 8,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.06,
         perspective: 1200,
-        scale: 1.02,
-        gyroscope: true,
+        gyroscope: false,
       });
+
+      // Parallax on chocolate splash blobs (desktop only)
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            const scrollY = window.scrollY;
+            document.querySelectorAll('.choco-splash').forEach((el, i) => {
+              const speed = 0.15 + (i * 0.05);
+              el.style.transform = `translateY(${scrollY * speed}px)`;
+            });
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
     }
-
-    // 3D Tilt on about cards
-    VanillaTilt.init(document.querySelectorAll(".about-card"), {
-      max: 10,
-      speed: 400,
-      glare: true,
-      "max-glare": 0.08,
-      perspective: 1000,
-      gyroscope: true,
-    });
-
-    // 3D Tilt on testimonial cards
-    VanillaTilt.init(document.querySelectorAll(".testimonial-card"), {
-      max: 8,
-      speed: 400,
-      glare: true,
-      "max-glare": 0.06,
-      perspective: 1200,
-      gyroscope: true,
-    });
-
-    // Parallax effect on chocolate splash blobs
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      document.querySelectorAll('.choco-splash').forEach((el, i) => {
-        const speed = 0.15 + (i * 0.05);
-        el.style.transform = `translateY(${scrollY * speed}px)`;
-      });
-    }, { passive: true });
   </script>
 
 </body>
